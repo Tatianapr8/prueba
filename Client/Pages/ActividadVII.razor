@@ -1,0 +1,49 @@
+@*@page "/SpecificFishComponent"
+<div class="jumbotron">
+    <FishCategoryComponent Fishes="GetFishesBeta()"/>
+    <FishCategoryComponent Fishes="GetFishesDisco()"/>
+
+</div>*@
+@*@code{
+    @*  Manejo de categorias*@
+        @*Private List<Fish> GetFishesBeta()
+    {
+        return new List<Fish>(){new Fish(){FishSpecie = "Beta 1", DescriptionSpecie = "Descripción del tipo de pez Beta 1",TypeOfWater = "Dulce",FishImage= "/Images/imagen1.jpeg", PublicationDate = new DateTime(2021, 09, 20)},
+            new Fish(){FishSpecie = "Beta 2", DescriptionSpecie = "Descripción del tipo de pez Beta 2",TypeOfWater = "Salada",FishImage = "/Images/imagen2.jpeg", PublicationDate = new DateTime(2021, 08, 20)},
+            new Fish(){FishSpecie = "Beta 3", DescriptionSpecie = "Descripción del tipo de pez Beta 3",TypeOfWater = "Dulce",FishImage = "/Images/imagen3.jpeg", PublicationDate = new DateTime(2021, 07, 20)},
+            new Fish(){FishSpecie = "Beta 4", DescriptionSpecie = "Descripción del tipo de pez Beta 4",TypeOfWater = "Salada",FishImage = "/Images/imagen4.jpeg", PublicationDate = new DateTime(2021, 09, 20)},
+            new Fish(){FishSpecie = "Beta 5", DescriptionSpecie = "Descripción del tipo de pez Beta 5",TypeOfWater = "Dulce",FishImage = "/Images/imagen5.jpeg", PublicationDate = new DateTime(2021, 08, 20)},
+            new Fish(){FishSpecie = "Beta 6", DescriptionSpecie = "Descripción del tipo de pez Beta 6",TypeOfWater = "Salada",FishImage = "/Images/imagen6.jpeg", PublicationDate = new DateTime(2021, 07, 20)}
+            }; 
+    }
+
+    Private List<Fish> GetFishesDisco()
+        {
+            return new List<Fish>(){
+                new Fish()
+                {
+                FishSpecie = "Disco 1", DescriptionSpecie = "Descripción del tipo de pez Disco 1",TypeOfWater = "Dulce",FishImage
+                = "/Images/imagen7.jpeg", PublicationDate = new DateTime(2021, 09, 20)},
+                new Fish()
+                {
+                FishSpecie = "Disco 2", DescriptionSpecie = "Descripción del tipo de pez Disco 2",TypeOfWater = "Salada",FishImage
+                = "/Images/imagen8.jpeg", PublicationDate = new DateTime(2021, 08, 20)},
+                new Fish()
+                {
+                FishSpecie = "Disco 3", DescriptionSpecie = "Descripción del tipo de pez Disco 3",TypeOfWater = "Dulce",FishImage
+                = "/Images/imagen9.jpeg", PublicationDate = new DateTime(2021, 07, 20)},
+                new Fish()
+                {
+                FishSpecie = "Disco 4", DescriptionSpecie = "Descripción del tipo de pez Disco 4",TypeOfWater = "Salada",FishImage
+                = "/Images/imagen10.jpeg", PublicationDate = new DateTime(2021, 09, 20)},
+                new Fish()
+                {
+                FishSpecie = "Disco 5", DescriptionSpecie = "Descripción del tipo de pez Disco 5",TypeOfWater = "Dulce",FishImage
+                = "/Images/imagen11.jpeg", PublicationDate = new DateTime(2021, 08, 20)},
+                new Fish()
+                {
+                FishSpecie = "Disco 6", DescriptionSpecie = "Descripción del tipo de pez Disco 6",TypeOfWater = "Salada",FishImage
+                = "/Images/imagen12.jpeg", PublicationDate = new DateTime(2021, 07, 20)}
+                };
+        }
+}*@

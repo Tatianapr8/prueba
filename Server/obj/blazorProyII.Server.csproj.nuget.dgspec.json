@@ -1,0 +1,210 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\ProysCicloIII\\PracticaSept20\\Server\\blazorProyII.Server.csproj": {}
+  },
+  "projects": {
+    "C:\\ProysCicloIII\\PracticaSept20\\Client\\blazorProyII.Client.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProysCicloIII\\PracticaSept20\\Client\\blazorProyII.Client.csproj",
+        "projectName": "blazorProyII.Client",
+        "projectPath": "C:\\ProysCicloIII\\PracticaSept20\\Client\\blazorProyII.Client.csproj",
+        "packagesPath": "C:\\Users\\RICARDO PINEDA\\.nuget\\packages\\",
+        "outputPath": "C:\\ProysCicloIII\\PracticaSept20\\Client\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\RICARDO PINEDA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\ProysCicloIII\\PracticaSept20\\Shared\\blazorProyII.Shared.csproj": {
+                "projectPath": "C:\\ProysCicloIII\\PracticaSept20\\Shared\\blazorProyII.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.9, )"
+            },
+            "System.Net.Http.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.browser-wasm",
+              "version": "[5.0.9, 5.0.9]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "browser-wasm": {
+          "#import": []
+        }
+      }
+    },
+    "C:\\ProysCicloIII\\PracticaSept20\\Server\\blazorProyII.Server.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProysCicloIII\\PracticaSept20\\Server\\blazorProyII.Server.csproj",
+        "projectName": "blazorProyII.Server",
+        "projectPath": "C:\\ProysCicloIII\\PracticaSept20\\Server\\blazorProyII.Server.csproj",
+        "packagesPath": "C:\\Users\\RICARDO PINEDA\\.nuget\\packages\\",
+        "outputPath": "C:\\ProysCicloIII\\PracticaSept20\\Server\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\RICARDO PINEDA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\ProysCicloIII\\PracticaSept20\\Client\\blazorProyII.Client.csproj": {
+                "projectPath": "C:\\ProysCicloIII\\PracticaSept20\\Client\\blazorProyII.Client.csproj"
+              },
+              "C:\\ProysCicloIII\\PracticaSept20\\Shared\\blazorProyII.Shared.csproj": {
+                "projectPath": "C:\\ProysCicloIII\\PracticaSept20\\Shared\\blazorProyII.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[5.0.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\ProysCicloIII\\PracticaSept20\\Shared\\blazorProyII.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\ProysCicloIII\\PracticaSept20\\Shared\\blazorProyII.Shared.csproj",
+        "projectName": "blazorProyII.Shared",
+        "projectPath": "C:\\ProysCicloIII\\PracticaSept20\\Shared\\blazorProyII.Shared.csproj",
+        "packagesPath": "C:\\Users\\RICARDO PINEDA\\.nuget\\packages\\",
+        "outputPath": "C:\\ProysCicloIII\\PracticaSept20\\Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\RICARDO PINEDA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

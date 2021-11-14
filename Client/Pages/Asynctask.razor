@@ -1,0 +1,73 @@
+@page "/asynctask"
+<div class="jumbotron">
+    @if (Fishes == null){
+            <img src="/Images/loading.gif" class="rounded mx-auto d=block" width="150px" height="150px" alt="Responsive image">
+            <label class="text muted">Cargando...</label>
+    }
+    else{
+        @for (int i = 0; i < Fishes.Count; i++){
+            <div class="list-group mb-3">
+                <a href="#" class= "list-group-item list-group-item-action flex-column align-items-start">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <img src="@Fishes[i].FishImage" class="img-thumbnail" alt="" width="200px" height="200px">
+                        </div>
+                        <div class="col-md-9">
+                            <h4 class="text-left">
+                                Especie de pez: 
+                                <small class="text-muted">@Fishes[i].FishSpecie</small>
+                            </h4>
+                            Descripción:
+                            <p class="mb-0 text-left">@Fishes[i].DescriptionSpecie</p>
+                            Tipo de agua en la que habita:
+                            <small class="text-muted">@Fishes[i].TypeOfWater</small>
+                            <footer class="blockquote-footer text-left">Fecha de la publicación <cite
+                            title="Source Title">@Fishes[i].PublicationDate.ToString("dd/MM/yyyy")</cite></footer>
+                        </div>
+                    </div>
+
+                </a>
+            </div>     
+        }
+    }
+</div>
+
+@code{
+    public List<Fish> Fishes;
+    private List<Fish> GetFishes()
+    {
+        return new List<Fish>(){
+            new Fish()
+            {
+            FishSpecie = "Beta 1", DescriptionSpecie = "Descripción del tipo de pez Beta 1",TypeOfWater = "Dulce",FishImage = "/Images/imagen1.jpeg", PublicationDate = new DateTime(2021, 09, 20)},
+            new Fish()
+            {
+            FishSpecie = "Beta 2", DescriptionSpecie = "Descripción del tipo de pez Beta 2",TypeOfWater = "Salada",FishImage
+            = "/Images/imagen2.jpeg", PublicationDate = new DateTime(2021, 08, 20)},
+            new Fish()
+            {
+            FishSpecie = "Beta 3", DescriptionSpecie = "Descripción del tipo de pez Beta 3",TypeOfWater = "Dulce",FishImage
+            = "/Images/imagen3.jpeg", PublicationDate = new DateTime(2021, 07, 20)},
+            new Fish()
+            {
+            FishSpecie = "Beta 4", DescriptionSpecie = "Descripción del tipo de pez Beta 4",TypeOfWater = "Salada",FishImage
+            = "/Images/imagen4.jpeg", PublicationDate = new DateTime(2021, 09, 20)},
+            new Fish()
+            {
+            FishSpecie = "Beta 5", DescriptionSpecie = "Descripción del tipo de pez Beta 5",TypeOfWater = "Dulce",FishImage
+            = "/Images/imagen5.jpeg", PublicationDate = new DateTime(2021, 08, 20)},
+            new Fish()
+            {
+            FishSpecie = "Beta 6", DescriptionSpecie = "Descripción del tipo de pez Beta 6",TypeOfWater = "Salada",FishImage
+            = "/Images/imagen6.jpeg", PublicationDate = new DateTime(2021, 07, 20)}
+            };
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        @* La informacion de la pagina se va a demorar 3 seg en cargar *@
+        await Task.Delay(3000);
+        Fishes = GetFishes();
+
+    }
+}
